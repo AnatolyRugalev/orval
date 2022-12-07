@@ -1,0 +1,25 @@
+openapi: 3.0.1
+info:
+  title: API
+  version: V1
+paths: {}
+components:
+  schemas:
+    Something_User:
+      type: object
+      title: Anything
+      properties:
+        name:
+          type: string
+        type:
+          type: string
+          enum:
+            - admin
+            - moderator
+            - customer
+            - guest
+    Something_UserType:
+      type: string
+      enum:
+        - admin
+        - guest

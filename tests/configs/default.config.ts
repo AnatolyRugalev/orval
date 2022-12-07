@@ -57,4 +57,11 @@ export default defineConfig({
       target: '../generated/default/null-type/endpoints.ts',
     },
   },
+  'name-conflicts': {
+    input: '../specifications/name-conflicts.yaml',
+    output: {
+      schemas: '../generated/default/name-conflicts/model',
+      target: '../generated/default/name-conflicts/endpoints.ts',
+    },
+  },
 });
